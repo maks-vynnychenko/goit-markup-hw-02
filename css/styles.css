@@ -18,6 +18,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .page-header {
   background-color: var(--white-color);
 }
@@ -74,6 +87,8 @@ body {
 
 .hero {
   background-color: var(--hero-bgd-color);
+}
+.hero-title {
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -81,7 +96,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
 .hero-button {
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -119,15 +133,17 @@ body {
 }
 .comand-card {
   background-color: var(--white-color);
-  font-size: 16px;
-  line-height: 1.19px;
 }
 
 .comand-title {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 .comand-text {
   color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .page-footer {
@@ -191,16 +207,4 @@ body {
 }
 .portfolio-link {
   text-decoration: none;
-}
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
